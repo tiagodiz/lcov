@@ -5080,7 +5080,7 @@ sub write_source($$$$$$$)
 		my $last_line = 0;
 
 		if (!$ignore[$ERROR_SOURCE]) {
-			die("ERROR: cannot read $source_filename\n");
+			die("ERROR: cannot readaaa $source_filename\n");
 		}
 
 		# Continue without source file
