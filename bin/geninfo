@@ -539,7 +539,7 @@ else
 		stat($_);
 		if (!-r _)
 		{
-			die("ERROR: cannot read $_!\n");
+			die("ERROR: cannot read1 $_!\n");
 		}
 	}
 }
@@ -1573,7 +1573,7 @@ sub solve_ambiguous_match($$$)
 
 		# Compare file contents
 		open(SOURCE, "<", $filename)
-			or die("ERROR: cannot read $filename!\n");
+			or die("ERROR: cannot read5 $filename!\n");
 
 		$no_match = 0;
 		for ($index = 2; <SOURCE>; $index += 3)
@@ -1649,7 +1649,7 @@ sub read_gcov_header($)
 			warn("WARNING: cannot read $_[0]!\n");
 			return (undef,undef);
 		}
-		die("ERROR: cannot read $_[0]!\n");
+		die("ERROR: cannot read2 $_[0]!\n");
 	}
 
 	while (<INPUT>)
@@ -1804,7 +1804,7 @@ sub read_gcov_file($)
 			warn("WARNING: cannot read $filename!\n");
 			return (undef, undef, undef);
 		}
-		die("ERROR: cannot read $filename!\n");
+		die("ERROR: cannot read3 $filename!\n");
 	}
 
 	if ($gcov_version < $GCOV_VERSION_3_3_0)
