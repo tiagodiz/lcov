@@ -5079,9 +5079,6 @@ sub write_source($$$$$$$)
 		my @lines;
 		my $last_line = 0;
 
-		if (!$ignore[$ERROR_SOURCE]) {
-			die("ERROR: cannot readaaa $source_filename\n");
-		}
 
 		# Continue without source file
 		warn("WARNING: cannot read $source_filename!\n");
